@@ -1,0 +1,966 @@
+{
+    "db": "vibren",
+    "tables": [
+        "acquisitions",
+        "etudes",
+        "etudes_listes",
+        "files",
+        "mesures",
+        "signals"
+    ],
+    "table": {
+        "acquisitions": {
+            "fields": [
+                "id",
+                "presence_acquisition",
+                "label_acquisition",
+                "numero_acquisition",
+                "commentaire_acquisition",
+                "date_heure",
+                "debut_acquisition",
+                "fin_acquisition",
+                "frequence_echantillonage",
+                "nombre_points_voie",
+                "nombre_voies",
+                "unite_y_filtre_0",
+                "unite_y_filtre_1",
+                "unite_y_filtre_2",
+                "unite_y_filtre_3",
+                "unite_y_filtre_4",
+                "unite_y_integration_0",
+                "unite_y_integration_1",
+                "unite_y_integration_2",
+                "unite_y_integration_3",
+                "unite_y_integration_4",
+                "unite_y_derivation_0",
+                "unite_y_derivation_1",
+                "unite_y_derivation_2",
+                "unite_y_derivation_3",
+                "unite_y_derivation_4",
+                "unite_y_spectre_puissance_0",
+                "unite_y_spectre_puissance_1",
+                "unite_y_spectre_puissance_2",
+                "unite_y_spectre_puissance_3",
+                "unite_y_spectre_puissance_4",
+                "unite_y_fft_reels_0",
+                "unite_y_fft_reels_1",
+                "unite_y_fft_reels_2",
+                "unite_y_fft_reels_3",
+                "unite_y_fft_reels_4",
+                "unite_y_inv_fft_reels_0",
+                "unite_y_inv_fft_reels_1",
+                "unite_y_inv_fft_reels_2",
+                "unite_y_inv_fft_reels_3",
+                "unite_y_inv_fft_reels_4",
+                "presence_dispositif",
+                "label_chantier",
+                "numero_dispo",
+                "nom_chantier",
+                "nombre_capteurs",
+                "duree_acquisition",
+                "frequence_anti_repli",
+                "nom_capteur_0",
+                "nom_capteur_1",
+                "nom_capteur_2",
+                "nom_capteur_3",
+                "nom_capteur_4",
+                "type_capteur_0",
+                "type_capteur_1",
+                "type_capteur_2",
+                "type_capteur_3",
+                "type_capteur_4",
+                "unite_mesure_0",
+                "unite_mesure_1",
+                "unite_mesure_2",
+                "unite_mesure_3",
+                "unite_mesure_4",
+                "sensibilite_capteur_0",
+                "sensibilite_capteur_1",
+                "sensibilite_capteur_2",
+                "sensibilite_capteur_3",
+                "sensibilite_capteur_4",
+                "gain_capteur_0",
+                "gain_capteur_1",
+                "gain_capteur_2",
+                "gain_capteur_3",
+                "gain_capteur_4",
+                "unites_par_pas_00",
+                "unites_par_pas_01",
+                "unites_par_pas_02",
+                "unites_par_pas_03",
+                "unites_par_pas_04",
+                "unites_par_pas_05",
+                "unites_par_pas_06",
+                "unites_par_pas_07",
+                "unites_par_pas_08",
+                "unites_par_pas_09",
+                "unites_par_pas_10",
+                "unites_par_pas_11",
+                "unites_par_pas_12",
+                "unites_par_pas_13",
+                "unites_par_pas_14",
+                "type_acquisition",
+                "source_trigger",
+                "duree_trigger",
+                "seuil_trigger",
+                "source_visu",
+                "createdAt",
+                "updatedAt",
+                "fileId"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "presence_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "label_acquisition": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "numero_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "commentaire_acquisition": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "date_heure": {
+                    "required": false,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "debut_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "fin_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "frequence_echantillonage": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "nombre_points_voie": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "nombre_voies": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "unite_y_filtre_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_filtre_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_filtre_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_filtre_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_filtre_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_integration_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_integration_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_integration_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_integration_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_integration_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_derivation_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_derivation_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_derivation_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_derivation_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_derivation_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_spectre_puissance_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_spectre_puissance_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_spectre_puissance_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_spectre_puissance_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_spectre_puissance_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_fft_reels_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_fft_reels_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_fft_reels_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_fft_reels_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_fft_reels_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_inv_fft_reels_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_inv_fft_reels_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_inv_fft_reels_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_inv_fft_reels_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y_inv_fft_reels_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "presence_dispositif": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "label_chantier": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "numero_dispo": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "nom_chantier": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nombre_capteurs": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "duree_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "frequence_anti_repli": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "nom_capteur_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nom_capteur_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nom_capteur_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nom_capteur_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nom_capteur_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "type_capteur_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "type_capteur_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "type_capteur_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "type_capteur_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "type_capteur_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_mesure_0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_mesure_1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_mesure_2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_mesure_3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_mesure_4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "sensibilite_capteur_0": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "sensibilite_capteur_1": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "sensibilite_capteur_2": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "sensibilite_capteur_3": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "sensibilite_capteur_4": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "gain_capteur_0": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "gain_capteur_1": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "gain_capteur_2": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "gain_capteur_3": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "gain_capteur_4": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "unites_par_pas_00": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_01": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_02": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_03": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_04": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_05": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_06": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_07": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_08": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_09": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_10": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_11": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_12": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_13": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "unites_par_pas_14": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "type_acquisition": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "source_trigger": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "duree_trigger": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "seuil_trigger": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "source_visu": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "fileId": {
+                    "required": false,
+                    "join": "files.id"
+                }
+            },
+            "key": "id"
+        },
+        "etudes": {
+            "fields": [
+                "id",
+                "libelle",
+                "description",
+                "createdAt",
+                "updatedAt"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "libelle": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "description": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                }
+            },
+            "key": "id"
+        },
+        "etudes_listes": {
+            "fields": [
+                "id",
+                "createdAt",
+                "updatedAt",
+                "etudeId",
+                "acquisitionId"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "etudeId": {
+                    "required": false,
+                    "join": "etudes.id"
+                },
+                "acquisitionId": {
+                    "required": false,
+                    "join": "acquisitions.id"
+                }
+            },
+            "key": "id"
+        },
+        "files": {
+            "fields": [
+                "id",
+                "fileid",
+                "filename",
+                "createdAt",
+                "updatedAt"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "fileid": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "filename": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                }
+            },
+            "key": "id"
+        },
+        "mesures": {
+            "fields": [
+                "id",
+                "voie",
+                "points",
+                "createdAt",
+                "updatedAt",
+                "acquisitionId",
+                "signalId"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "voie": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "points": {
+                    "required": false,
+                    "type": "text",
+                    "dbtype": "longtext"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "acquisitionId": {
+                    "required": false,
+                    "join": "acquisitions.id"
+                },
+                "signalId": {
+                    "required": false,
+                    "join": "signals.id"
+                }
+            },
+            "key": "id"
+        },
+        "signals": {
+            "fields": [
+                "id",
+                "presence_signal",
+                "numero_fichier",
+                "commentaire_traitement",
+                "trace_source",
+                "trace_sortie",
+                "nombre_voies",
+                "coefficient_multiplicateur_00",
+                "coefficient_multiplicateur_01",
+                "coefficient_multiplicateur_02",
+                "coefficient_multiplicateur_03",
+                "coefficient_multiplicateur_04",
+                "coefficient_multiplicateur_05",
+                "coefficient_multiplicateur_06",
+                "coefficient_multiplicateur_07",
+                "coefficient_multiplicateur_08",
+                "coefficient_multiplicateur_09",
+                "coefficient_multiplicateur_10",
+                "coefficient_multiplicateur_11",
+                "coefficient_multiplicateur_12",
+                "coefficient_multiplicateur_13",
+                "coefficient_multiplicateur_14",
+                "temps_debut",
+                "temps_fin",
+                "frequence_echantillonage",
+                "nombre_points_voie",
+                "unite_x",
+                "unite_y0",
+                "unite_y1",
+                "unite_y2",
+                "unite_y3",
+                "unite_y4",
+                "createdAt",
+                "updatedAt",
+                "fileId",
+                "acquisitionId"
+            ],
+            "field": {
+                "id": {
+                    "required": true,
+                    "type": "counter"
+                },
+                "presence_signal": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "numero_fichier": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "commentaire_traitement": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "trace_source": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "trace_sortie": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "nombre_voies": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "coefficient_multiplicateur_00": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_01": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_02": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_03": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_04": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_05": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_06": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_07": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_08": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_09": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_10": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_11": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_12": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_13": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "coefficient_multiplicateur_14": {
+                    "required": false,
+                    "type": "float",
+                    "dbtype": "float"
+                },
+                "temps_debut": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "temps_fin": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "frequence_echantillonage": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "nombre_points_voie": {
+                    "required": false,
+                    "type": "int",
+                    "dbtype": "int(11)"
+                },
+                "unite_x": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y0": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y1": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y2": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y3": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "unite_y4": {
+                    "required": false,
+                    "type": "char",
+                    "dbtype": "varchar(255)"
+                },
+                "createdAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "updatedAt": {
+                    "required": true,
+                    "type": "datetime",
+                    "dbtype": "datetime"
+                },
+                "fileId": {
+                    "required": false,
+                    "join": "files.id"
+                },
+                "acquisitionId": {
+                    "required": false,
+                    "join": "acquisitions.id"
+                }
+            },
+            "key": "id"
+        }
+    }
+}
